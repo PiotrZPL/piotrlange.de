@@ -106,7 +106,7 @@ class PageBase {
                 ]
               ),
               UnorderedList(
-                widget_class: "mobile-menu h-0 md:h-auto overflow-hidden px-6 md:pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative md:flex md:flex-row flex-col items-center md:items-center gap-6 md:gap-6 bg-gray-100 dark:bg-gray-800 transition-all ease-in duration-300",
+                widget_class: "mobile-menu absolute z-100 h-0 md:h-auto overflow-hidden px-6 md:pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative md:flex md:flex-row flex-col items-center md:items-center gap-6 md:gap-6 bg-gray-100 dark:bg-gray-800 transition-all ease-in duration-300",
                 widgets: [
                   ListItem(
                     widget_class: "grid place-items-center my-2 text-lg font-bold",
