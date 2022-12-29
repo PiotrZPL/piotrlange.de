@@ -36,15 +36,18 @@ void main() async {
                   widgets: [
                 BrandLink(
                   widget_class: "h-30 w-30 p-2 inline-block rounded-full border border-transparent text-gray-900 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white",
-                  brand: "facebook"
+                  brand: "facebook",
+                  link: "https://www.facebook.com/profile.php?id=100018056777388"
                 ),
                 BrandLink(
                   widget_class: "h-30 w-30 p-2 inline-block rounded-full border border-transparent text-gray-900 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white",
-                  brand: "github"
+                  brand: "github",
+                  link: "https://github.com/PiotrZPL/"
                 ),
                 BrandLink(
                   widget_class: "h-30 w-30 p-2 inline-block rounded-full border border-transparent text-gray-900 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white",
-                  brand: "reddit"
+                  brand: "reddit",
+                  link: "https://www.reddit.com/user/Piotr_Lange"
                 )
                   ]
                 )

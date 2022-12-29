@@ -1,6 +1,8 @@
 import 'package:dbml/dbml.dart';
 import 'package:dart_emoji/dart_emoji.dart';
 
+import 'brandLink.dart';
+
 class PageBase {
   PageBase ({
     required this.path,
@@ -54,6 +56,23 @@ class PageBase {
     if (darkStorage && darkStorage === 'dark') {
       document.documentElement.classList.add('dark')
     }"""
+          ),
+          Div(
+            widget_class: "toggle-dark-mode fixed bottom-5 right-5",
+            widgets: [
+              Hyperlink(
+                widgets:[
+                  BrandLink(
+                    widget_class: "hidden dark:block",
+                    brand: "sun"
+                  ),
+                  BrandLink(
+                    widget_class: "dark:hidden",
+                    brand: "moon"
+                  )
+                ]
+              )
+            ]
           ),
           Header(
             widget_class: "container flex justify-between md:justify-between gap-4 flex-wrap px-6 pt-3 mx-auto relative",
@@ -166,16 +185,12 @@ class PageBase {
             widgets: listOfWidgets
           ),
           Footer(
-            widget_class: "container p-6 mx-auto md:flex justify-between items-center",
+            widget_class: "container p-6 mx-auto flex justify-center",
             widgets: [
               Paragraph(
-                widget_class: "text-sm font-light",
-                text: """Copyright © 2022 - ${Hyperlink(href: "https://github.com/PiotrZPL", text:"Piotr Lange").toHTML()} - All rights reserved"""
+                widget_class: "text-sm",
+                text: """© 2020-2022 - Piotr Lange - Powered by ${Hyperlink(href: "https://github.com/PiotrZPL/dbml", text:"DBML", widget_class: "text-blue-500 font-bold").toHTML()}"""
               ),
-              Paragraph(
-                widget_class: "text-sm font-light",
-                text: """Generated on ${DateTime.now().day.toString().length == 2 ? DateTime.now().day : "0" + DateTime.now().day.toString()}.${DateTime.now().month}.${DateTime.now().year} using ${Hyperlink(href: "https://github.com/PiotrZPL/dbml", text:"DBML").toHTML()}"""
-              )
             ]
           ),
 
