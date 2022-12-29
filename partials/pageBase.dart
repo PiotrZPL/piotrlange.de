@@ -37,7 +37,13 @@ class PageBase {
           ),
           Link(
             rel: "icon",
-            href: "/logo.png"
+            sizes: "32x32",
+            href: "/images/favicon-32x32.png"
+          ),
+          Link(
+            rel: "icon",
+            sizes: "16x16",
+            href: "/images/favicon-16x16.png"
           )
         ]
       ),
