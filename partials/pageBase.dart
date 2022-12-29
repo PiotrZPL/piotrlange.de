@@ -120,7 +120,7 @@ class PageBase {
                     ]
                   ),
                   ListItem(
-                    widget_class: "grid place-items-center my-2 text-lg font-bold",
+                    widget_class: "grid place-items-center my-2 text-lg font-bold hidden md:block",
                     widgets: [
                       Span(
                         text: "|"
