@@ -17,7 +17,7 @@ void main() async {
                   widget_class: "grid place-content-center",
                   widgets: [
                     Img(
-                      widget_class: "rounded-full w-80 lg:w-96",
+                      widget_class: "rounded-full w-44 md:w-96",
                       src: "/images/profile-fixed.webp"
                     )
                   ]
