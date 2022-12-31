@@ -1,6 +1,7 @@
 import 'package:dbml/dbml.dart';
 import "partials/pageBase.dart";
 import 'partials/brandLink.dart';
+import 'partials/mdPages.dart';
 
 void main() async {
   buildWebsite(
@@ -55,7 +56,7 @@ void main() async {
             )
           ]
         ).toHtmlDoc()
-      ]
+      ] + renderMDPages()
     ),
     "tailwind.config.js"
   );
