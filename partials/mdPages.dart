@@ -8,18 +8,19 @@ List<HtmlDoc> renderMDPages() {
   Directory pagesDir = Directory(pagesPath);
   for (var entry in pagesDir.listSync().toList()) {
     if (entry is File) {
-      renderedPages += [renderSingleMDPage(entry.path, entry.path.replaceFirst(pagesPath, ""))];
+      renderedPages += [renderSingleMDPage(entry.path, pagesPath)];
     }
     else if (entry is Directory) {
-      stdout.write("Directory ${entry.path}\n");
+      renderedPages += renderMDDirectory(entry.path, pagesPath);
     }
   }
   return renderedPages;
 }
 
-HtmlDoc renderSingleMDPage(String path, String finalPath) {
+HtmlDoc renderSingleMDPage(String path, String pagesPath) {
   File thisFile = File(path);
   String markdown = thisFile.readAsStringSync();
+  String finalPath = path.replaceFirst(pagesPath, "");
   return PageBase(
     path: "${finalPath.replaceAll(".md", "")}/index.html",
     title: "OK",
@@ -32,4 +33,18 @@ HtmlDoc renderSingleMDPage(String path, String finalPath) {
       )
     ]
   ).toHtmlDoc();
+}
+
+List<HtmlDoc> renderMDDirectory(String path, String pagesPath) {
+  Directory thisDir = Directory(path);
+  List<HtmlDoc> renderedPages = [];
+  for (var entry in thisDir.listSync().toList()) {
+    if (entry is File) {
+      renderedPages += [renderSingleMDPage(entry.path, pagesPath)];
+    }
+    else if (entry is Directory) {
+      renderedPages += renderMDDirectory(entry.path, pagesPath);
+    }
+  }
+  return renderedPages;
 }
