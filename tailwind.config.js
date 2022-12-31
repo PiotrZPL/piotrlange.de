@@ -35,6 +35,11 @@ module.exports = {
         yellow: colors.yellow,
       },
       typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            maxWidth: '75ch',
+          }
+        },
         dark: {
           css: [
             {
