@@ -81,6 +81,9 @@ module.exports = {
               code: {
                 color: theme("colors.white"),
               },
+              a: {
+                color: theme("colors.white"),
+              },
               "a code": {
                 color: theme("colors.white"),
               },
