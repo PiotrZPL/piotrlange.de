@@ -3,6 +3,7 @@ import "partials/pageBase.dart";
 import 'partials/brandLink.dart';
 import 'partials/mdPages.dart';
 import 'partials/blog_page.dart';
+import 'partials/projects_page.dart';
 
 void main() async {
   buildWebsite(
@@ -58,6 +59,7 @@ void main() async {
           ]
         ).toHtmlDoc(),
         BlogPage().toHtmlDoc(),
+        ProjectsPage().toHtmlDoc()
       ] + renderMDPages()
     ),
     "tailwind.config.js"

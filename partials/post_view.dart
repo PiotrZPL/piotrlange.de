@@ -4,7 +4,7 @@ class PostView extends Div {
   PostView({
     style,
     id,
-    required this.datetext,
+    this.datetext,
     required title,
     required this.description,
     required this.postLink,
@@ -24,14 +24,14 @@ class PostView extends Div {
                 widget_class: "rounded-lg shadow-sm w-full h-52 object-cover",
                 src: imageLink
               ),
-              Div(
+              datetext != null ? Div(
                 widget_class: "absolute top-4 right-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5",
                 widgets: [
                   Paragraph(
                     text: datetext
                   )
                 ]
-              )
+              ) : null
             ]
           ),
           Div(
@@ -54,7 +54,7 @@ class PostView extends Div {
     ]
   );
 
-  String datetext = "";
+  String? datetext;
   String description = "";
   String postLink = "";
   String imageLink = "";
