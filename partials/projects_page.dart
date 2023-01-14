@@ -29,22 +29,20 @@ class ProjectsPage {
             PostView(
               title: "PrimeCheck",
               description: "A simple math program",
-              postLink: "https://piotrlange.de/",
-              imageLink: "/images/N90.jpg"
+              postLink: "/projects/primecheck/",
+              imageLink: "/images/primecheck.webp"
             ),
             PostView(
-              datetext: "OK",
-              title: "Second Post",
-              description: "Hello world, again!",
-              postLink: "https://piotrlange.de/",
-              imageLink: "/images/N90.jpg"
+              title: "BinCalc",
+              description: "Convert numbers and make calculations using binary numbers with minimal effort!",
+              postLink: "https://github.com/PiotrZPL/BinCalc",
+              imageLink: "/images/bincalc.webp"
             ),
             PostView(
-              datetext: "19.10.2022",
-              title: "Next post",
-              description: "This is the next post",
-              postLink: "https://piotrlange.de/",
-              imageLink: "/images/N90.jpg"
+              title: "GCF&LCM",
+              description: "Find the Greatest Common Factors and Lowest Common Multiples of different numbers.",
+              postLink: "https://github.com/PiotrZPL/GCFandLCM",
+              imageLink: "/images/gcfandlcm.webp"
             )
           ]
         )
