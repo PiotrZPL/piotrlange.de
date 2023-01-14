@@ -5,7 +5,13 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   content: ["./**/*.html"],
   plugins: [],darkMode: "class",
+  safelist: [{
+    pattern: /hljs+/,
+  }],
   theme: {
+    hljs: {
+      theme: 'night-owl',
+    },
     extend: {
       colors: {
         amber: colors.amber,
@@ -109,5 +115,5 @@ module.exports = {
       typography: ["dark"],
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require('tailwind-highlightjs')],
 }
