@@ -140,7 +140,7 @@ class PageBase {
                     widget_class: "grid place-items-center my-2 text-lg font-bold",
                     widgets: [
                       Hyperlink(
-                        href: "/contact",
+                        href: translateLink("/contact/", language),
                         text: translateWord("Contact me", language)
                       )
                     ]

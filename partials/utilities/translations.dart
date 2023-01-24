@@ -26,3 +26,27 @@ String translateWord(String engWord, String targetLanguage){
     throw Exception("$engWord not found in the dictionary");
   }
 }
+
+String translateLink(String baseLink, String targetLanguage) {
+  if (targetLanguage == "en") {
+    return baseLink;
+  }
+  Map dictionary = {
+    "/contact/": {
+      "pl": "/pl/contact/"
+    }
+  };
+  if (dictionary.containsKey(baseLink) && dictionary[baseLink] is Map) {
+    Map thistranslations = dictionary[baseLink];
+    if (thistranslations.containsKey(targetLanguage)) {
+      return thistranslations[targetLanguage];
+    }
+    else{
+      throw Exception("$targetLanguage translation not found for link $baseLink");
+    }
+  }
+  else {
+    throw Exception("$baseLink not found in the dictionary");
+  }
+
+}
