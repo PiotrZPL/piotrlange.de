@@ -1,5 +1,6 @@
 import 'package:dbml/dbml.dart';
-import 'package:dart_emoji/dart_emoji.dart';
+import 'utilities/translations.dart';
+import 'language_switcher.dart';
 
 import 'brandLink.dart';
 
@@ -8,18 +9,20 @@ class PageBase {
     required this.path,
     required this.title,
     required this.listOfWidgets,
-    this.description
+    this.description,
+    this.language = "en"
   });
 
   String path;
   String title;
   String? description;
   List<HtmlWidget> listOfWidgets;
+  String language;
 
   HtmlDoc toHtmlDoc() {
     return HtmlDoc(
       description: description,
-      lang: "en",
+      lang: language,
       path: path,
       head: Head(
         title: title,
@@ -111,7 +114,7 @@ class PageBase {
                     widgets: [
                       Hyperlink(
                         href: "/blog",
-                        text: "Blog"
+                        text: translateWord("Blog", language)
                       )
                     ]
                   ),
@@ -120,7 +123,7 @@ class PageBase {
                     widgets: [
                       Hyperlink(
                         href: "/projects",
-                        text: "Projects"
+                        text: translateWord("Projects", language)
                       )
                     ]
                   ),
@@ -138,7 +141,7 @@ class PageBase {
                     widgets: [
                       Hyperlink(
                         href: "/contact",
-                        text: "Contact me"
+                        text: translateWord("Contact me", language)
                       )
                     ]
                   ),
@@ -153,33 +156,9 @@ class PageBase {
                   ListItem(
                     widget_class: "grid place-items-center my-2 text-lg font-bold",
                     widgets: [
-                      Hyperlink(
-                        href: "/pl/",
-                        text: EmojiParser().emojify(":flag-pl:")
-                      )
+                      LanguageSwitcher(languageList: ["pl"], currentLanguage: language)
                     ]
                   ),
-          //         ListItem(
-          //           widget_class: "grid place-items-center my-2",
-          //           widgets: [
-          //             Span(
-          //               widget_class: "toggle-dark-mode inline-block cursor-pointer",
-          //               text: """<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
-          //   stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          //   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          //   <circle cx="12" cy="12" r="3" />
-          //   <line x1="12" y1="5" x2="12" y2="5.01" />
-          //   <line x1="17" y1="7" x2="17" y2="7.01" />
-          //   <line x1="19" y1="12" x2="19" y2="12.01" />
-          //   <line x1="17" y1="17" x2="17" y2="17.01" />
-          //   <line x1="12" y1="19" x2="12" y2="19.01" />
-          //   <line x1="7" y1="17" x2="7" y2="17.01" />
-          //   <line x1="5" y1="12" x2="5" y2="12.01" />
-          //   <line x1="7" y1="7" x2="7" y2="7.01" />
-          // </svg>"""
-          //             )
-          //           ]
-          //         )
                 ]
               )
             ]
