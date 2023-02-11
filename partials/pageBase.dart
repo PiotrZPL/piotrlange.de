@@ -172,7 +172,7 @@ class PageBase {
             children: [
               Paragraph(
                 properties: "text-sm",
-                text: """© 2020-${DateTime.now().year} - Piotr Lange - Powered by ${Hyperlink(href: "https://github.com/PiotrZPL/dbml", text:"DBML", properties: "text-blue-500 font-bold").toHTML()}"""
+                text: """© 2020-${DateTime.now().year} - Piotr Lange - Powered by ${Hyperlink(href: "https://github.com/PiotrZPL/staurolite", text:"Staurolite", properties: "text-blue-500 font-bold").toHTML()}"""
               ),
             ]
           ),
