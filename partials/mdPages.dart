@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:dbml/dbml.dart';
+import 'package:staurolite/staurolite.dart';
 import 'pageBase.dart';
 
 List<HtmlDoc> renderMDPages() {
@@ -26,8 +26,8 @@ HtmlDoc renderSingleMDPage(String path, String pagesPath) {
     title: "OK",
     listOfWidgets: [
       Article(
-        widget_class: "prose lg:prose-lg mx-auto mb-8 dark:prose-dark px-4",
-        widgets: [
+        properties: "prose lg:prose-lg mx-auto mb-8 dark:prose-dark px-4",
+        children: [
           MarkdownElement(markdown: markdown)
         ]
       )

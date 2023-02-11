@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'package:dbml/dbml.dart';
+import 'package:staurolite/staurolite.dart';
 
 class BrandLink extends HtmlWidget {
   BrandLink ({
-    widget_class,
+    properties,
     style,
     id,
     title,
@@ -11,7 +11,7 @@ class BrandLink extends HtmlWidget {
     this.link,
     this.width = 50,
     this.height = 40,
-  }) : super(widget_class: widget_class, style: style, id: id, title: title);
+  }) : super(properties: properties, style: style, id: id, title: title);
 
   String brand;
   String? link;
@@ -23,7 +23,7 @@ class BrandLink extends HtmlWidget {
     String brandsvg = File("brands/$brand.svg").readAsStringSync();
     brandsvg = brandsvg.replaceFirst("svg ", """svg class="fill-current" width="$width" height="$height" """);
     return Hyperlink(
-      widget_class: widget_class,
+      properties: properties,
       href: link,
       text: brandsvg
     ).toHTML();

@@ -1,4 +1,4 @@
-import 'package:dbml/dbml.dart';
+import 'package:staurolite/staurolite.dart';
 
 class PostView extends Div {
   PostView({
@@ -12,21 +12,21 @@ class PostView extends Div {
   }) : super(
     style: style,
     id: id,
-    widget_class: "p-2",
-    widgets: [
+    properties: "p-2",
+    children: [
       Hyperlink(
         href: postLink,
-        widgets: [
+        children: [
           Div(
-            widget_class: "relative",
-            widgets: [
-              Img(
-                widget_class: "rounded-lg shadow-sm w-full h-52 object-cover",
+            properties: "relative",
+            children: [
+              Image(
+                properties: "rounded-lg shadow-sm w-full h-52 object-cover",
                 src: imageLink
               ),
               datetext != null ? Div(
-                widget_class: "absolute top-4 right-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5",
-                widgets: [
+                properties: "absolute top-4 right-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5",
+                children: [
                   Paragraph(
                     text: datetext
                   )
@@ -35,15 +35,15 @@ class PostView extends Div {
             ]
           ),
           Div(
-            widget_class: "my-2 text-xl font-bold",
-            widgets: [
+            properties: "my-2 text-xl font-bold",
+            children: [
               Paragraph(
                 text: title
               )
             ]
           ),
           Div(
-            widgets: [
+            children: [
               Paragraph(
                 text: description
               )

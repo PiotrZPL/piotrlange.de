@@ -1,4 +1,4 @@
-import 'package:dbml/dbml.dart';
+import 'package:staurolite/staurolite.dart';
 import 'package:dart_emoji/dart_emoji.dart';
 import 'utilities/get_flags.dart';
 

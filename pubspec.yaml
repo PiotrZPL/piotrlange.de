@@ -16,6 +16,6 @@ dev_dependencies:
 
 dependencies:
   dart_emoji: ^0.2.0+2
-  dbml:
+  staurolite:
     git: 
-      url: https://github.com/piotrzpl/dbml
+      url: https://github.com/piotrzpl/staurolite

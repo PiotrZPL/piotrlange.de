@@ -1,4 +1,4 @@
-import 'package:dbml/dbml.dart';
+import 'package:staurolite/staurolite.dart';
 import '../pageBase.dart';
 
 class PrimeCheckPage extends PageBase {
@@ -6,7 +6,7 @@ class PrimeCheckPage extends PageBase {
     path: "/projects/primecheck/index.html",
     title: "PrimeCheck - Piotr Lange",
     listOfWidgets: [
-      Img(
+      Image(
         src: "/images/primecheck.webp"
       )
     ]

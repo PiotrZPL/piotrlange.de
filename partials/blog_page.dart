@@ -1,4 +1,4 @@
-import 'package:dbml/dbml.dart';
+import 'package:staurolite/staurolite.dart';
 import 'pageBase.dart';
 import 'post_view.dart';
 
@@ -10,22 +10,22 @@ class BlogPage {
       title: "Blog - Piotr Lange",
       listOfWidgets: [
         Article(
-          widget_class: "prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4",
-          widgets: [
+          properties: "prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4",
+          children: [
             Heading(
-              widget_class: "text-center mb-0",
+              properties: "text-center mb-0",
               level: 1,
               text: "Piotr Lange's blog"
             ),
             Paragraph(
-              widget_class: "text-2xl text-center mt-0",
+              properties: "text-2xl text-center mt-0",
               text: "This part of the website is not yet finished."
             ),
           ]
         ),
         Div(
-          widget_class: "container p-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8",
-          widgets: [
+          properties: "container p-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8",
+          children: [
             PostView(
               datetext: "OK",
               title: "First Post",
