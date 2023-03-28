@@ -13,6 +13,7 @@ void main() async {
         PageBase(
           path: "/index.html",
           title: "Piotr Lange",
+          description: "Piotr Lange's personal website",
           listOfWidgets: [
             Article(
               properties: "prose lg:prose-lg mx-auto mb-8 dark:prose-dark px-4",
@@ -64,6 +65,7 @@ void main() async {
           path: "/pl/index.html",
           language: "pl",
           title: "Piotr Lange",
+          description: "Strona personalna Piotra Lange",
           listOfWidgets: [
             Article(
               properties: "prose lg:prose-lg mx-auto mb-8 dark:prose-dark px-4",
