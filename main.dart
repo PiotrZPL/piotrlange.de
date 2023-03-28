@@ -22,7 +22,8 @@ void main() async {
                   children: [
                     Image(
                       properties: "rounded-full w-44 md:w-96",
-                      src: "/images/profile-fixed.webp"
+                      src: "/images/profile-fixed.webp",
+                      alt: "profile picture"
                     )
                   ]
                 ),
@@ -72,7 +73,8 @@ void main() async {
                   children: [
                     Image(
                       properties: "rounded-full w-44 md:w-96",
-                      src: "/images/profile-fixed.webp"
+                      src: "/images/profile-fixed.webp",
+                      alt: "profile picture"
                     )
                   ]
                 ),

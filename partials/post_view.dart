@@ -22,7 +22,8 @@ class PostView extends Div {
             children: [
               Image(
                 properties: "rounded-lg shadow-sm w-full h-52 object-cover",
-                src: imageLink
+                src: imageLink,
+                alt: "post picture"
               ),
               datetext != null ? Div(
                 properties: "absolute top-4 right-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5",
