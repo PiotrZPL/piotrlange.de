@@ -51,6 +51,10 @@ class PageBase {
             rel: "icon",
             sizes: "16x16",
             href: "/images/favicon-16x16.png"
+          ),
+          Link(
+            rel: "stylesheet",
+            href: "/fonts/fa/css/fork-awesome.min.css",
           )
         ]
       ),
