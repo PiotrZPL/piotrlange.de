@@ -1,6 +1,5 @@
 import 'package:staurolite/staurolite.dart';
 import "partials/pageBase.dart";
-import 'partials/brandLink.dart';
 import 'partials/mdPages.dart';
 import 'partials/blog_page.dart';
 import 'partials/projects_page.dart';
@@ -40,21 +39,30 @@ void main() async {
                 Div(
                   properties: "flex justify-center",
                   children: [
-                    BrandLink(
-                      properties: "h-30 w-30 p-2 inline-block rounded-full border border-transparent text-gray-900 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white",
-                      brand: "facebook",
-                      link: "https://www.facebook.com/profile.php?id=100018056777388"
+                    Hyperlink(
+                      href: "",
+                      children: [
+                        IndicateText(
+                          properties: "fa fa-3x fa-facebook-official text-gray-900 hover:text-blue-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-blue-500 ease-in duration-300 px-2"
+                        )
+                      ]
                     ),
-                    BrandLink(
-                      properties: "h-30 w-30 p-2 inline-block rounded-full border border-transparent text-gray-900 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white",
-                      brand: "github",
-                      link: "https://github.com/PiotrZPL/"
+                    Hyperlink(
+                      href: "",
+                      children: [
+                        IndicateText(
+                          properties: "fa fa-3x fa-github text-gray-900 hover:text-green-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-green-500 ease-in duration-300 px-2"
+                        )
+                      ]
                     ),
-                    BrandLink(
-                      properties: "h-30 w-30 p-2 inline-block rounded-full border border-transparent text-gray-900 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white",
-                      brand: "reddit",
-                      link: "https://www.reddit.com/user/Piotr_Lange"
-                    )
+                    Hyperlink(
+                      href: "",
+                      children: [
+                        IndicateText(
+                          properties: "fa fa-3x fa-reddit text-gray-900 hover:text-red-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-red-500 ease-in duration-300 px-2"
+                        )
+                      ]
+                    ),
                   ]
                 )
               ]
@@ -92,26 +100,11 @@ void main() async {
                 Div(
                   properties: "flex justify-center",
                   children: [
-                    // BrandLink(
-                    //   properties: "h-30 w-30 p-2 inline-block rounded-full border border-transparent text-gray-900 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white",
-                    //   brand: "facebook",
-                    //   link: "https://www.facebook.com/profile.php?id=100018056777388"
-                    // ),
-                    // BrandLink(
-                    //   properties: "h-30 w-30 p-2 inline-block rounded-full border border-transparent text-gray-900 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white",
-                    //   brand: "github",
-                    //   link: "https://github.com/PiotrZPL/"
-                    // ),
-                    // BrandLink(
-                    //   properties: "h-30 w-30 p-2 inline-block rounded-full border border-transparent text-gray-900 hover:text-gray-900 hover:border-gray-900 cursor-pointer transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-white",
-                    //   brand: "reddit",
-                    //   link: "https://www.reddit.com/user/Piotr_Lange"
-                    // )
                     Hyperlink(
                       href: "",
                       children: [
                         IndicateText(
-                          properties: "fa fa-2x fa-facebook-official text-gray-900 hover:text-blue-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-blue-500 ease-in duration-300 px-2"
+                          properties: "fa fa-3x fa-facebook-official text-gray-900 hover:text-blue-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-blue-500 ease-in duration-300 px-2"
                         )
                       ]
                     ),
@@ -119,7 +112,7 @@ void main() async {
                       href: "",
                       children: [
                         IndicateText(
-                          properties: "fa fa-2x fa-github text-gray-900 hover:text-blue-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-blue-500 ease-in duration-300 px-2"
+                          properties: "fa fa-3x fa-github text-gray-900 hover:text-green-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-green-500 ease-in duration-300 px-2"
                         )
                       ]
                     ),
@@ -127,7 +120,7 @@ void main() async {
                       href: "",
                       children: [
                         IndicateText(
-                          properties: "fa fa-2x fa-reddit text-gray-900 hover:text-blue-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-blue-500 ease-in duration-300 px-2"
+                          properties: "fa fa-3x fa-reddit text-gray-900 hover:text-red-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-red-500 ease-in duration-300 px-2"
                         )
                       ]
                     ),
