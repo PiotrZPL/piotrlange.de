@@ -20,6 +20,6 @@ Released under the terms of the [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.
 
 # Downloads
 
-<a href="https://piotrlange.de/primecheck/primecheck.apk"><img src="/images/download-apk.svg" alt="APK" width="400"/></a>
+<a href="primecheck.apk"><img src="/images/download-apk.svg" alt="APK" width="400"/></a>
 
 <a href="https://open-store.io/app/primecheck.piotrzpl"><img src="https://open-store.io/badges/en_US.svg" alt="OpenStore" width="400"/></a>
