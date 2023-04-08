@@ -40,7 +40,7 @@ void main() async {
                   properties: "flex justify-center",
                   children: [
                     Hyperlink(
-                      href: "",
+                      href: "https://www.facebook.com/profile.php?id=100018056777388",
                       children: [
                         IndicateText(
                           properties: "fa fa-3x fa-facebook-official text-gray-900 hover:text-blue-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-blue-500 ease-in duration-300 px-2"
@@ -48,7 +48,7 @@ void main() async {
                       ]
                     ),
                     Hyperlink(
-                      href: "",
+                      href: "https://github.com/PiotrZPL/",
                       children: [
                         IndicateText(
                           properties: "fa fa-3x fa-github text-gray-900 hover:text-green-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-green-500 ease-in duration-300 px-2"
@@ -56,7 +56,7 @@ void main() async {
                       ]
                     ),
                     Hyperlink(
-                      href: "",
+                      href: "https://www.reddit.com/user/Piotr_Lange",
                       children: [
                         IndicateText(
                           properties: "fa fa-3x fa-reddit text-gray-900 hover:text-red-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-red-500 ease-in duration-300 px-2"
@@ -101,7 +101,7 @@ void main() async {
                   properties: "flex justify-center",
                   children: [
                     Hyperlink(
-                      href: "",
+                      href: "https://www.facebook.com/profile.php?id=100018056777388",
                       children: [
                         IndicateText(
                           properties: "fa fa-3x fa-facebook-official text-gray-900 hover:text-blue-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-blue-500 ease-in duration-300 px-2"
@@ -109,7 +109,7 @@ void main() async {
                       ]
                     ),
                     Hyperlink(
-                      href: "",
+                      href: "https://github.com/PiotrZPL/",
                       children: [
                         IndicateText(
                           properties: "fa fa-3x fa-github text-gray-900 hover:text-green-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-green-500 ease-in duration-300 px-2"
@@ -117,7 +117,7 @@ void main() async {
                       ]
                     ),
                     Hyperlink(
-                      href: "",
+                      href: "https://www.reddit.com/user/Piotr_Lange",
                       children: [
                         IndicateText(
                           properties: "fa fa-3x fa-reddit text-gray-900 hover:text-red-500 transition-colors dark:text-gray-200 dark:hover:border-gray-300 dark:hover:text-red-500 ease-in duration-300 px-2"
