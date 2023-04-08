@@ -77,7 +77,7 @@ class PageBase {
           Div(
             properties: "z-20 toggle-dark-mode fixed bottom-8 right-8 w-6 h-6 md:w-10 md:h-10 fill-current",
             children: [
-              Hyperlink(
+              Div(
                 properties: "hidden dark:block",
                 children: [
                   IndicateText(
@@ -85,7 +85,7 @@ class PageBase {
                   )
                 ]
               ),
-              Hyperlink(
+              Div(
                 properties: "dark:hidden",
                 children: [
                   IndicateText(
