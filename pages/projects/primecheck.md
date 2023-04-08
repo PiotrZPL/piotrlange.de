@@ -1,3 +1,8 @@
+---
+title: PrimeCheck - Piotr Lange
+description: PrimeCheck - a multiplatform app to check if a number is a prime
+---
+
 <div class="grid place-content-center">
 <img src="/images/primecheck.webp" alt="primecheck" width="400"/>
 </div>

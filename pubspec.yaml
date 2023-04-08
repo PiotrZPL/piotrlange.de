@@ -19,3 +19,4 @@ dependencies:
   staurolite:
     git: 
       url: https://github.com/piotrzpl/staurolite
+  yaml: ^3.1.1
