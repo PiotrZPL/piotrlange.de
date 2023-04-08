@@ -1,6 +1,6 @@
 import 'package:staurolite/staurolite.dart';
-import "partials/pageBase.dart";
-import 'partials/mdPages.dart';
+import 'partials/page_base.dart';
+import 'partials/markdown_pages.dart';
 import 'partials/blog_page.dart';
 import 'partials/projects_page.dart';
 

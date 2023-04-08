@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:staurolite/staurolite.dart';
-import 'pageBase.dart';
+import 'page_base.dart';
 
 List<HtmlDoc> renderMDPages() {
   List<HtmlDoc> renderedPages = [];

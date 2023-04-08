@@ -1,5 +1,5 @@
 import 'package:staurolite/staurolite.dart';
-import 'pageBase.dart';
+import 'page_base.dart';
 import 'post_view.dart';
 
 class BlogPage {
