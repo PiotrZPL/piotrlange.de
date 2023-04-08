@@ -19,6 +19,7 @@ class PageBase {
 
   HtmlDoc toHtmlDoc() {
     return HtmlDoc(
+      properties: "dark",
       description: description,
       lang: language,
       path: path,
@@ -70,8 +71,8 @@ class PageBase {
       document.documentElement.classList.add('dark');
       localStorage.setItem('darkmode', 'dark')
     }
-    if (darkStorage && darkStorage === 'dark') {
-      document.documentElement.classList.add('dark')
+    if (darkStorage && darkStorage === 'light') {
+      document.documentElement.classList.remove('dark')
     }"""
           ),
           Div(
