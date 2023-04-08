@@ -40,6 +40,7 @@ void main() async {
                   properties: "flex justify-center",
                   children: [
                     Hyperlink(
+                      ariaLabel: "My Facebook profile",
                       href: "https://www.facebook.com/profile.php?id=100018056777388",
                       children: [
                         IndicateText(
@@ -48,6 +49,7 @@ void main() async {
                       ]
                     ),
                     Hyperlink(
+                      ariaLabel: "My GitHub profile",
                       href: "https://github.com/PiotrZPL/",
                       children: [
                         IndicateText(
@@ -56,6 +58,7 @@ void main() async {
                       ]
                     ),
                     Hyperlink(
+                      ariaLabel: "My reddit profile",
                       href: "https://www.reddit.com/user/Piotr_Lange",
                       children: [
                         IndicateText(
@@ -101,6 +104,7 @@ void main() async {
                   properties: "flex justify-center",
                   children: [
                     Hyperlink(
+                      ariaLabel: "My Facebook profile",
                       href: "https://www.facebook.com/profile.php?id=100018056777388",
                       children: [
                         IndicateText(
@@ -109,6 +113,7 @@ void main() async {
                       ]
                     ),
                     Hyperlink(
+                      ariaLabel: "My GitHub profile",
                       href: "https://github.com/PiotrZPL/",
                       children: [
                         IndicateText(
@@ -117,6 +122,7 @@ void main() async {
                       ]
                     ),
                     Hyperlink(
+                      ariaLabel: "My reddit profile",
                       href: "https://www.reddit.com/user/Piotr_Lange",
                       children: [
                         IndicateText(
