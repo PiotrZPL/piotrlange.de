@@ -104,6 +104,7 @@ class PageBase {
                 text: "PIOTR LANGE"
               ),
               Button(
+                ariaLabel: "Mobile menu button",
                 properties: "block relative h-auto mobile-menu-button md:hidden",
                 children: [
                   Div(
