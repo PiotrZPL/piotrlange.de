@@ -137,8 +137,12 @@ void main() async {
         ).toHtmlDoc(),
         BlogPage().toHtmlDoc(),
         ProjectsPage().toHtmlDoc(),
-      ] + renderMDPages()
+      ] + renderMDPages(),
+      baseUrl: "https://piotrlange.de"
     ),
-    "tailwind.config.js"
+    customConfigPath: "tailwind.config.js",
+    buildIndexJSON: true,
+    shortenIndexJSONPaths: true,
+    buildSiteMap: true
   );
 }
